@@ -56,11 +56,11 @@ async function fetchTopLanguages(username, exclude_repo = []) {
   }
 
   // filter out repositories to be hidden
-  repoNodes = repoNodes
-    .sort((a, b) => b.size - a.size)
-    .filter((name) => {
-      return !repoToHide[name.name];
-    });
+//   repoNodes = repoNodes
+//     .sort((a, b) => b.size - a.size)
+//     .filter((name) => {
+//       return !repoToHide[name.name];
+//     });
 
   repoNodes = repoNodes
     .filter((node) => {
